@@ -16,21 +16,21 @@
       height: 150vh;
       background-color: #c4c4c4;
     }
+
     /* head */
     #main {
       width: 100vw;
-      height: 20vh;
+      height: 30vh;
       background-color: aliceblue;
       display: flex;
       justify-content: center;
       align-items: center;
       border: 1px solid black;
-      text-align: center; 
+      text-align: center;
     }
 
 
 
-    /* mid */
     
     #menu {
       width: 100vw;
@@ -40,11 +40,11 @@
       justify-content: center;
       align-items: center;
       border: 1px solid black;
+      position: fixed;
     }
-
+    
     #menu > div {
       width: 10vw;
-      height: 5vh;
       margin: 100px;
       display: flex;
       justify-content: center;
@@ -52,11 +52,12 @@
       text-align: center;
       transition: all 0.2s linear;
     }
-
+    
     #menu > div:hover {
       transform: scale(1.5);
     }
     
+    /* mid */
 
     #wrap {
       width: 100vw;
@@ -65,15 +66,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-image: url(https://i.ytimg.com/vi/UNCT9Lk3J4Y/maxresdefault.jpg);
+      background-size: cover;
     }
 
-    #wrap > section {
-      width: 1280px;
-      height: 720px;
-      background-image: url(https://i.ytimg.com/vi/UNCT9Lk3J4Y/maxresdefault.jpg);
-      background-size: contain;
-      border: 1px solid black;
-    }
+
 
     #con {
       width: 100vw;
@@ -102,18 +99,16 @@
 </head>
 <body>
   <div id="root">
-    <div id="main">
-      <h1>타이틀</h1>
-    </div>
     <div id="menu">
       <div>게임소개</div>
       <div>캐릭터</div>
       <div>세계관</div>
       <div>커뮤니티</div>
     </div>
-    <div id="wrap">
-      <section></section>
+    <div id="main">
+      <h1>원신</h1>
     </div>
+    <div id="wrap"></div>
     <div id="con">
       <h1>미디어</h1>
       <div></div>
