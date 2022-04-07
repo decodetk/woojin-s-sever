@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #c4c4c4;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+    }
+
+    #top {
+      width: 30%;
+      height: 10%;
+      background-color: aliceblue;
+      border: 1px solid black;
+      margin: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #main {
+      width: 90%;
+      height: 90%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
+    }
+
+    #main > #name {
+      width: 30%;
+      height: 100%;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+
+
+    #name > div {
+      width: 80%;
+      height: 10%;
+      background-color: aliceblue;
+      border: 1px solid black;
+    }
+
+    #main > #text {
+      width: 70%;
+      height: 100%;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+
+    #text > div {
+      width: 80%;
+      height: 20%;
+      background-color: aliceblue;
+      border: 1px solid black;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="top">
+      <h1>Title</h1>
+    </div>
+    <div id="main">
+      <div id="name">
+        <div>주인공1</div>
+        <div>주인공2</div>
+        <div>주인공3</div>
+        <div>주인공4</div>
+      </div>
+      <div id="text">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatibus iste saepe possimus. Ducimus obcaecati porro, repellendus voluptatem inventore earum ipsam, soluta sequi doloremque laboriosam perferendis? Maxime quo suscipit asperiores.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quia corporis accusamus dolores? Illo, inventore amet! Officia, amet. Consectetur necessitatibus cumque vel distinctio sed illum iure numquam quidem doloribus.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam sit, dolor iusto temporibus id, libero unde autem, veritatis accusantium consectetur dolorum dolores? Voluptas dolor cum accusantium fuga nostrum ipsum.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae iusto totam eum iste vel temporibus, corrupti ducimus laborum quos autem libero doloribus fugiat unde aspernatur recusandae optio quia alias.</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
