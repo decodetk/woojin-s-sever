@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #c4c4c4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #top {
+      width: 50%;
+      height: 10%;
+      margin: 20px;
+      background-color: aliceblue;
+      border-radius: 15px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #mid {
+      width: 100%;
+      height: 10%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #mid > div {
+      width: 30%;
+      height: 40%;
+      background-color: aliceblue;
+      border-radius: 10px;
+      border: 1px solid black;
+      margin: 50px;
+      text-align: center;
+      transition: all 0.2s linear;
+    }
+
+    #mid > div:hover {
+      transform: scale(1.5);
+    }
+
+    #bot {
+      width: 100%;
+      height: 70%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #bot > div {
+      width: 90%;
+      height: 90%;
+      border: 1px solid black;
+      background-color: aliceblue;
+      background-image: url(http://images.khan.co.kr/article/2021/09/27/2021092702001268100261651.jpg);
+      background-size: cover;
+    }
+
+    #end {
+      width: 100%;
+      height: 10%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;        
+    }
+
+    #end > div {
+      width: 10%;
+      height: 30%;
+      margin: 15px;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: aliceblue;
+      text-align: center;
+      transition: all 0.2s linear;
+    }
+
+    #end > div:hover {
+      transform: scale(1.5);
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="top">
+      <h1>title</h1>
+    </div>
+    <div id="mid">
+      <div>게임소개</div>
+      <div>세계관</div>
+      <div>캐릭터</div>
+      <div>미디어</div>
+    </div>
+    <div id="bot">
+      <div></div>
+    </div>
+    <div id="end">
+      <div>외부링크</div>
+    </div>
+  </div>
+</body>
+</html>
