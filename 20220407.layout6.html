@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 50vw;
+      height: 100vh;
+      background-color: #c4c4c4;
+      display: flex;
+    }
+
+    #menu {
+      width: 10vw;
+      height: 100vh;
+      border: 1px solid black;
+    }
+
+    #menu > div {
+      width: 3vw;
+      height: 2vh;
+      margin: 10px;
+      background-color: white;
+      border: 1px solid black;  
+    }
+
+    #wrap {
+      width: 50vw;
+      height: 100vh;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #wrap > div {
+      width: 20vw;
+      height: 10vh;
+      background-color: white;
+      border: 1px solid black;
+      margin: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s linear;
+    }
+
+    #wrap > div:hover {
+      transform: scale(1.5);
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="wrap">
+      <div>게임 소개</div>
+      <div>세계관</div>
+      <div>캐릭터</div>
+      <div>미디어</div>
+    </div>
+
+  </div>
+</body>
+</html>
