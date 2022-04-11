@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+
+    #main {
+      width: 50%;
+      height: 90%;
+      border: 1px solid black;
+    }
+
+    #top {
+      width: 100%;
+      height: 15%;
+    }
+
+
+    #title {
+      width: 100%;
+      height: 10%;
+    }
+
+    #title > div {
+      margin: 10px;
+    }
+
+
+    #main > #dot {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    #main > #dot > div {
+      width: 5px;
+      height: 5px;
+      border: 1px solid black;
+      margin: 5px;
+    }
+
+
+    #main > #mid {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #mid > #container {
+      width: 90%;
+      height: 90%;
+      background-color: #c4c4c4;
+    }
+
+    #container > div {
+      width: 100%;
+      height: 50%;
+      border: 1px solid black;
+    }
+    
+
+
+    #main > #bot {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #bot > div {
+      width: 90%;
+      height: 90%;
+      background-color: #c4c4c4;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="root">
+    <div id="main">
+      <div id="top">
+        <div></div>
+      </div>
+      <div id="title">
+        <div>
+          <h1>CARD management</h1>
+          <div>Uber Money designed By for Uber</div>
+        </div>
+      </div>
+      <div id="dot">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="mid">
+        <div id="container">
+        </div>
+      </div>
+      <div id="bot">
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
