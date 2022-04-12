@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 200vh;
+      background-color: aliceblue;
+    }
+
+
+
+    #top {
+      width: 100vw;
+      height: 10vh;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: row;
+    }
+
+    #top > div:nth-child(1) {
+      width: 30%;
+      height: 100%;
+      border: 1px solid black;
+    }
+
+    #top > div:nth-child(2) {
+      width: 70%;
+      height: 100%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      word-spacing: 10px;
+    }
+
+    #main {
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;      
+    }
+
+    #wrap {
+      width: 90%;
+      height: 40%;
+      border: 1px solid black;
+    }
+
+    #bot {
+      width: 100vw;
+      height: 90vh;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    #container {
+      width: 90%;
+      height: 90%;
+      border: 1px solid black;
+    }
+
+    
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="top">
+      <div>natural</div>
+      <div>individual
+        deserve
+        unfair
+        return
+      </div>
+    </div>
+    <div id="main">
+      <div id="wrap">
+        <h1>Habit is a second nature.</h1>
+      </div>
+    </div>
+    <div id="bot">
+      <div id="container"></div>
+    </div>
+  </div>
+</body>
+</html>
