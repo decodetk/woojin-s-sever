@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,eAAe;CACxB;;AAED,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,eAAe;CACxB",
+    "sources": [
+        "baseball1.scss"
+    ],
+    "names": [],
+    "file": "baseball1.css"
+}
