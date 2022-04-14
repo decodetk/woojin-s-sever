@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes moving {
+  0% {
+    top:0px;
+  }
+  95% {
+    width: 100px;
+  }
+  to {
+    top:300px;
+    width:115px;
+    height:90px
+  } 
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#box1 {
+  width: 40vw;
+  height: 40vh;
+  background-color: red;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  animation: 4s moving;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+}
+
+#box2 {
+  width: 40vw;
+  height: 40vh;
+  background-color:blue;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+  top: 170px;
+  right: 100px;
+  animation: 3s moving;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+} 
+
+#box3 {
+  width: 40vw;
+  height: 40vh;
+  background-color: green;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 3;
+  left: 200px;
+  top: 250px;
+  animation: 2s moving;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+} 
+
+#box4 {
+  width: 40vw;
+  height: 40vh;
+  background-color: yellow;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 4;
+  right: 170px;
+  top: 350px;
+  animation: 1s moving;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+} 
