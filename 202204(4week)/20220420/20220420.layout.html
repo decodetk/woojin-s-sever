@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+    }
+
+    #section {
+      width: 40vw;
+      height: 20vh;
+      position: absolute;
+      left: 60px;
+      top: 600px;
+      z-index: 8;
+    }
+
+    #section2 {
+      width: 60vw;
+      height: 30vh;
+      transform: rotate(270deg);
+      position: absolute;
+      left: 250px;
+      top: 350px;
+      z-index: 8;
+    }
+
+    #section2 > h1 {
+      text-align: center;
+    }
+
+    #section3 {
+      width: 60vw;
+      height: 10vh;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 8;
+    }
+
+
+
+
+    #one {
+      width: 20vw;
+      height: 100vh;
+      border: 1px solid black;
+      background-color: azure;
+      position: relative;
+      z-index: 5;
+    }
+
+
+    #two {
+      width: 10vw;
+      height: 100vh;
+      border: 1px solid black;
+      background-color: #c4c4c4;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 4;
+    }
+
+    #two > h1 {
+      position: relative;
+      right: 40px;
+      font-size: 200px;
+      z-index: 4;
+    }
+
+    #three {
+      width: 30vw;
+      height: 100vh;
+      border: 1px solid black;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      z-index: 3;
+    }
+
+    #three > h1 {
+      font-size: 200px;
+      position: relative;
+      right: 30px;
+      z-index: 2;
+    }
+
+    #four {
+      width: 50vw;
+      height: 100vh;
+      border: 1px solid black;
+      background-color: rgb(53, 53, 53);
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    #four > h1 {
+      position: relative;
+      right: 40px;
+      font-size: 200px;
+      z-index: 2;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="section">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere ipsam quasi. Ad beatae libero voluptatibus autem corporis tempore necessitatibus consectetur sed placeat suscipit enim, unde a eum dignissimos et.
+    </div>
+    <div id="section2">
+      <h1>lorem</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at ullam itaque provident minima vero dolore. Fugiat nesciunt temporibus, adipisci ipsum quam, quae sint aliquid voluptate earum eligendi cumque dolores?
+    </div>
+
+    <div id="section3">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia similique
+    </div>
+    <div id="one">
+      <section></section>
+    </div>
+    <div id="two">
+      <h1>B</h1>
+    </div>
+    <div id="three">
+      <h1>I</h1>
+    </div>
+    <div id="four">
+      <h1>G</h1>
+    </div>
+  </div>
+</body>
+</html>
