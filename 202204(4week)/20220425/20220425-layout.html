@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #wrap {
+      width: 760px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    #wrap > div:nth-child(1) {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #c4c4c4;
+      margin: 10px
+    }
+
+    #wrap > div:nth-child(2) {
+      width: 500px;
+      height: 250px;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #root > section {
+      width: 250px;
+      height: 500px;
+      background-color: rgb(53, 53, 53);
+      margin: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="wrap">
+      <div>element-1</div>
+      <div>element-2</div>
+    </div>
+    <section>element-3</div>
+  </div>
+
+  <script>
+    const wrap = document.getElementById("wrap");
+    const one = wrap.children[1];
+    const two = wrap.children[2];
+
+    two.textContent = "이건 두번째이다"
+
+    console.log(wrap);
+    console.dir(wrap);
+    console.dir(wrap.children[1]);
+    console.log(typeof two.textContent);
+
+    one.addEventListener('click', function() {
+      two.style.transition = "1s";
+      two.textContent = "클릭했다 이놈아!!!";
+      two.style.backgroundColor = "#ff666";
+      two.style.width = "500px";
+      console.log(two.style.backgroundColor);
+      if(two.style.backgroundColor === "rgb (255, 102, 102)"); {
+        two.style.backgroundColor = "blue";
+      }
+    });
+
+  </script>
+</body>
+</html>
