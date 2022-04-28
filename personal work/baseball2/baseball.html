@@ -23,17 +23,39 @@
       width: 50vw;
       height: 25vh;
       border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     #mid {
       width: 50vw; 
       height: 50vh;
       border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    #mid > div {
+      width: 40vw;
+      height: 50vh;
+      border: 1px solid black;
+
     }
 
     #bot {
       width: 50vw;
       height: 25vh;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    #bot > div {
+      width: 40vw;
+      height: 10vh;
       border: 1px solid black;
     }
 
@@ -43,8 +65,12 @@
   <div id="root">
     <div id="wrap">
       <div id="top"></div>
-      <div id="mid"></div>
-      <div id="bot"></div>
+      <div id="mid">
+        <div></div>
+      </div>
+      <div id="bot">
+        <div></div>
+      </div>
     </div>
   </div>
 </body>
